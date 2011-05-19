@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
   s.name        = "santas-little-helpers"
   s.version     = Santas::Little::Helpers::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
+  s.authors     = ["Stephan Schubert"]
+  s.email       = ["stephan@frozencherry.de"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{A bunch of modules, extensions and other stuff.}
+  s.description = %q{I always copy-pasted this stuff to freshly created apps.}
 
   s.rubyforge_project = "santas-little-helpers"
 

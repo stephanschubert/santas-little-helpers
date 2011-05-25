@@ -9,8 +9,11 @@ module Santas::Little::Helpers
 
       key = name.to_s
 
-      if defined?(Rails)
-        @@settings[key][Rails.env]
+      puts "HALLO"
+      puts defined?(::Rails).inspect
+
+      if defined?(::Rails)
+        @@settings[key][::Rails.env]
       else
         @@settings[key]
       end

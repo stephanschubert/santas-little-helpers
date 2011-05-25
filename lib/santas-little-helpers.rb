@@ -8,3 +8,5 @@ end
 
 require "santas-little-helpers/string/to_ascii"
 require "santas-little-helpers/string/to_url"
+
+require "santas-little-helpers/settings"

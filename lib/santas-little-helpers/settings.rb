@@ -10,7 +10,7 @@ module Santas::Little::Helpers
       key = name.to_s
 
       if defined?(::Rails)
-        @@settings[key][::Rails.env]
+        @@settings[key][::Rails.env] || @@settings[key]
       else
         @@settings[key]
       end

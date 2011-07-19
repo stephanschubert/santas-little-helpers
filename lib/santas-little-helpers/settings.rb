@@ -14,6 +14,8 @@ module Santas::Little::Helpers
       else
         @@settings[key]
       end
+    rescue
+      {}
     end
 
   end

@@ -3,7 +3,7 @@ module Santas::Little::Helpers
   class Settings
 
     def self.method_missing(name, *args)
-      @@settings ||= Hash.new do |hash, key|
+      @@settings ||= ::Hash.new do |hash, key|
         hash[key] = YAML.load File.read("config/#{key}.yml")
       end
 
@@ -14,8 +14,6 @@ module Santas::Little::Helpers
       else
         @@settings[key]
       end
-    rescue
-      {}
     end
 
   end

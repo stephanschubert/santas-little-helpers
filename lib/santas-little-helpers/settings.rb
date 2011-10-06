@@ -1,7 +1,6 @@
 require "infinite_hash"
 
 module Santas::Little::Helpers
-
   class Settings
 
     def self.method_missing(name, *args)
@@ -20,5 +19,4 @@ module Santas::Little::Helpers
       InfiniteHash.new
     end
   end
-
 end

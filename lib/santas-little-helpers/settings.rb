@@ -15,7 +15,15 @@ module Santas::Little::Helpers
         @@settings[key]
       end
     rescue
-      {}
+      InfiniteHash.new
+    end
+
+    private
+
+    class InfiniteHash < Hash
+      def method_missing(*args)
+        InfiniteHash.new
+      end
     end
 
   end

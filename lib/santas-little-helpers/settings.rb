@@ -14,7 +14,7 @@ module Santas::Little::Helpers
         @@settings[key]
       end
     rescue
-      InfiniteHash.new
+      InfiniteNil.new
     end
   end
 end

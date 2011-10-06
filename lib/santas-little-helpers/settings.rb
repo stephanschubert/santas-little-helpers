@@ -1,5 +1,3 @@
-require "infinite_hash"
-
 module Santas::Little::Helpers
   class Settings
 

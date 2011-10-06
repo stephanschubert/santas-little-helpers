@@ -15,4 +15,5 @@ require "santas-little-helpers/settings"
 if defined?(Rails)
   require "santas-little-helpers/rails/helpers/media_block"
   require "santas-little-helpers/rails/helpers/date_helper"
+  require "santas-little-helpers/rails/helpers/textile_helper"
 end

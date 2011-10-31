@@ -14,7 +14,7 @@ module Santas::Little::Helpers
         @@settings[key]
       end
     rescue
-      InfiniteNil.new
+      {} # InfiniteNil.new
     end
   end
 end
